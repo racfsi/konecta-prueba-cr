@@ -1,0 +1,109 @@
+/** GLOBAL **/
+
+:root {
+  --colorPrimary: #62495b;
+  --colorGreen: #1ee000;
+}
+
+body {
+  background: #ecf0f5;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input[readonly] {
+  background-color: transparent;
+  border: 1px solid !important;
+}
+/* FORM CUSTOM */
+.form-custom {
+  padding: 0px 50px;
+}
+.form-custom .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-custom .form-group label {
+  font-weight: 600;
+  padding-left: 20px;
+}
+.form-custom .form-group input {
+  border: 0px;
+  height: 40px;
+  padding-left: 20px;
+}
+.save-from {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.save-from .far,
+.save-from .fas {
+  margin-left: 10px;
+}
+/* NEW */
+
+.btn-new-from {
+  background: var(--colorPrimary);
+  border: 1px solid var(--colorPrimary);
+  margin: 0 auto;
+  padding: 5px 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.btn-new-from a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-new-from a > .fas {
+  margin-left: 10px;
+}
+
+.btn-new-from:hover {
+  background: #fff;
+  border: 1px solid var(--colorPrimary);
+  transition: all 0.3s ease;
+}
+
+.btn-new-from:hover a {
+  color: var(--colorPrimary);
+  transition: all 0.3s ease;
+}
+/** AJAX RESPONSE **/
+
+.responseAjax {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responseAjax p {
+  color: #000;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.responseAjax-beforeSend {
+  background: #fce303;
+}
+
+.responseAjax-done {
+  background: #1ee000;
+}
+
+.responseAjax-fail {
+  background: red;
+}
